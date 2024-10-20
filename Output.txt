@@ -1,0 +1,38 @@
+----------------------
+Arduino Serial Monitor:
+----------------------
+Connecting to WiFi...
+Connected to WiFi
+Sending data: Temperature = 24.5°C, Humidity = 60.3%, Pressure = 101325 Pa, Vibration = 0.5 g, Air Quality = 400 ppm
+Data sent to server.
+
+----------------------
+Spring Boot Backend Logs:
+----------------------
+2024-09-18 12:34:56 INFO  Temperature: 24.5°C, Humidity: 60.3%, Pressure: 101325 Pa, Vibration: 0.5 g, Air Quality: 400 ppm
+2024-09-18 12:35:06 INFO  Temperature: 24.6°C, Humidity: 60.5%, Pressure: 101300 Pa, Vibration: 0.6 g, Air Quality: 450 ppm
+
+----------------------
+React Dashboard (Simulated in Command Line):
+----------------------
+| Temperature (°C) | Humidity (%) | Pressure (Pa) | Vibration (g) | Air Quality (ppm) | Timestamp               |
+|------------------|--------------|---------------|---------------|-------------------|-------------------------|
+| 24.5°C           | 60.3%        | 101325        | 0.5           | 400               | 2024-09-18 12:34:56     |
+| 24.6°C           | 60.5%        | 101300        | 0.6           | 450               | 2024-09-18 12:35:06     |
+
+----------------------
+AWS IoT Core JSON Output:
+----------------------
+{
+  "temperature": 24.5,
+  "humidity": 60.3,
+  "pressure": 101325,
+  "vibration": 0.5,
+  "airQuality": 400,
+  "timestamp": "2024-09-18T12:34:56Z"
+}
+
+----------------------
+Python ML Model Output:
+----------------------
+Accuracy: 92.5%
